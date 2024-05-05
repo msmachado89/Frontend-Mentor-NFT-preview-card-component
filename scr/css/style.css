@@ -1,0 +1,188 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 5rem auto;
+  color: var(--title-clr);
+}
+.attribution a {
+  color: var(--eth-clr);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font);
+
+  background-color: var(--main-bg-clr);
+}
+
+main {
+  height: 100vh;
+  max-width: var(--desktop-mw);
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 350px;
+
+  background-color: var(--card-bg-clr);
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 1.5rem;
+
+  padding: 2.4rem;
+}
+
+.card .picture-link {
+  position: relative;
+  display: flex;
+}
+
+.card .picture {
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+.card .picture-link::before {
+  content: "";
+  background-color: var(--eth-clr);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.card .picture-link::after {
+  content: "";
+  background: url(../images/icon-view.svg) no-repeat center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.card .picture-link:hover::before {
+  border-radius: 0.8rem;
+  opacity: 0.4;
+}
+
+.card .picture-link:hover::after {
+  opacity: 1;
+}
+
+.card .title-link {
+  display: inline-block;
+  
+  margin: 2.4rem 0 1.6rem;
+}
+
+.card .title-link .title {
+  color: var(--title-clr);
+  display: inline-block;
+  
+  font-size: 2.2rem;
+  
+  font-weight: 600;
+}
+
+.card .title-link .title:hover {
+  color: var(--eth-clr);
+  cursor: pointer;
+}
+
+.card .description {
+  color: var(--description-clr);
+
+  font-size: 1.8rem;
+
+  font-weight: 400;
+
+  line-height: 2.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 2.4rem;
+  border-bottom: 1px solid var(--line-clr);
+
+  line-height: 1;
+  margin-bottom: 1.6rem;
+
+  font-size: 1.6rem;
+
+  font-weight: 300;
+}
+
+.info .eth {
+  color: var(--eth-clr);
+  font-weight: 500;
+  letter-spacing: 0.2px;
+
+  display: flex;
+}
+
+.info .eth::before {
+  content: url(../images/icon-ethereum.svg);
+  display: inline-block;
+  margin-right: 0.6rem;
+}
+
+.info .time-left {
+  display: flex;
+  color: var(--description-clr);
+}
+
+.info .time-left::before {
+  content: url(../images/icon-clock.svg);
+  display: inline-block;
+  margin-right: 0.8rem;
+}
+
+.creator {
+  display: flex;
+
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.creator .creator-picture {
+  width: 3.3rem;
+
+  border: 1.2px solid white;
+  border-radius: 50%;
+}
+
+.creator .creator-info {
+  color: var(--description-clr);
+  margin-left: 1.6rem;
+  font-size: 1.6rem;
+
+  font-weight: 300;
+
+  letter-spacing: 0.2px;
+}
+
+.creator .creator-info span {
+  color: white;
+}
+
+.creator .creator-info span:hover {
+  color: var(--eth-clr);
+  cursor: pointer;
+}

@@ -1,0 +1,14 @@
+:root {
+  --desktop-mw: 1440px;
+  --mobile-mw: 375px;
+  
+  --main-bg-clr: hsl(217, 54%, 11%);
+  --card-bg-clr: hsl(216, 50%, 16%);
+  --line-clr: hsl(215, 32%, 27%);
+  --description-clr: hsl(215, 51%, 70%);
+  --title-clr: hsl(0, 0%, 100%);
+  --eth-clr: hsl(178, 100%, 50%);
+
+  --font: "Outfit", sans-serif;
+  /* Weights: 300, 400, 600 */
+}
